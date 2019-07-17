@@ -2,6 +2,6 @@
   <image src="/images/avatar.png" class="user-avatar"></image>
   <text class="user-name">hello alang</text>
   <view>
-    <text class="moto">开启小程序之旅</text>
+    <text class="moto">开启小程序之旅gitTest</text>
   </view>
 </view>
