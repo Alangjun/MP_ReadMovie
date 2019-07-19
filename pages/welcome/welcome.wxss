@@ -19,7 +19,7 @@ page{
   margin-top: 40rpx;
 }
 .moto{
-   font-size: 22rpx;
+  font-size: 22rpx;
   font-weight: bold;
   line-height: 80rpx;
 }

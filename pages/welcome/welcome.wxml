@@ -2,6 +2,8 @@
   <image src="/images/avatar.png" class="user-avatar"></image>
   <text class="user-name">hello alang</text>
   <view class="moto-container">
-    <text class="moto">开启小程序之旅</text>
+    <text class="moto" bind:tap="onTap">开启小程序之旅</text>
   </view>
+
+
 </view>
