@@ -10,34 +10,49 @@ Page({
     
   },
 
-  process:function(){
-    var date = 'Nov 18 2019'
-
-  },
-
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
- 
+
     this.setData({
       posts_content: postData.postList
     })
 
-    console.log('onLoad')
+    console.log(this.data.posts_content)
+  },
+  onShow(){
+   
+    let readingNumObj = wx.getStorageSync('readingNumObj')
+    for (let index in postData.postList){
+      if (!readingNumObj[index]){
+        postData.postList[index]['readingNum'] = 0
+      } else {
+        postData.postList[index]['readingNum'] = readingNumObj[index]
+      }
+    }
+    this.setData({
+      posts_content: postData.postList
+    })
+ 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  
   onPostTap: function(event){
     var postId = event.currentTarget.dataset.postid
-    console.log(postId)
     wx.navigateTo({
       url: 'post-detail/post-detail?id='+postId,
     })
+  },
+  onSwiperTap: function(event){
+    var postId = event.target.dataset.postid
+    wx.navigateTo({
+      url: 'post-detail/post-detail?id=' + postId,
+    })
+    console.log(event)
   }
+
 
 
  

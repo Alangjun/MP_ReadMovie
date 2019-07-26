@@ -48,12 +48,26 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
 					"name": "新闻详情",
 					"pathName": "pages/posts/post-detail/post-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "测试页面",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/posts/posts",
 					"query": "",
 					"scene": null
 				}
